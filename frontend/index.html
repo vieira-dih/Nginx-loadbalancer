@@ -1,0 +1,11 @@
+<h1>Loja Virtual</h1>
+
+<button onclick="load()">Testar API</button>
+
+<script>
+function load() {
+  fetch('/api/info')
+    .then(res => res.json())
+    .then(data => alert(JSON.stringify(data)))
+}
+</script>
